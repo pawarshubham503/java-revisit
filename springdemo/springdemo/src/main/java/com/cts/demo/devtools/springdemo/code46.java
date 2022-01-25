@@ -1,5 +1,8 @@
 package com.cts.demo.devtools.springdemo;
 
+/*Write a program to read a valid email id and extract the username.
+Note - user name is the string appearing before @ symbol.
+*/
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
