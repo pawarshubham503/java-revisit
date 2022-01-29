@@ -7,7 +7,11 @@ public static void main(String[] args) {
 	Scanner sc=new Scanner(System.in);
 	String s=sc.next();
 	boolean b=validatePan(s);
-	System.out.println(b);
+	if(b==true)
+	System.out.println("valid");
+	else
+		System.out.println("invalid");
+		
 }
 public static boolean validatePan(String s) {
 	boolean h=false;
