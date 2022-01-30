@@ -1,6 +1,7 @@
 package com.cts.demo.devtools.springdemo.patelcodeEXAMPLE;
 
-import java.util.Arrays;
+/*https://javabypatel.blogspot.com/2018/06/java-8-stream-practice-problems.html
+*/import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
@@ -141,6 +142,15 @@ public class StreamTest {
            .findFirst();
        System.out.println(stud.isPresent() ? stud.get().getName() : "No student found");
        System.out.println("--------------------");
+
+       /*****************************************************
+       Get student with matching address "1235"
+      *****************************************************/
+      Optional<Student> stud1 = students.stream()
+          .filter(student -> student.getAddress().getZipcode().equals("1235"))
+          .findFirst();
+      System.out.println(stud1.isPresent() ? stud1.get().getName() : "No student found");
+      System.out.println("--------------------");
 
 	}
 }
