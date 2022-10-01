@@ -43,6 +43,22 @@ public class SinglyLinkedList {
 		newNode.next=head;
 		head=newNode;
 	}
+	
+	
+	public void insertLast(int value) {
+		ListNode newNode= new ListNode(value);
+		if (head ==null) {
+			head =newNode;
+			return ;
+		}
+		ListNode current =head;
+		while(null != current.next)
+		{
+			current=current.next;
+			
+		}
+		current.next=newNode;
+	}
 	public static void main(String[] args) {
 		SinglyLinkedList sll = new SinglyLinkedList();// initialize the sll
 
@@ -54,9 +70,16 @@ public class SinglyLinkedList {
 		 * 
 		 * sll.head.next = second;// 1 second.next = third;// 8 third.next = fourth;// 7
 		 */
-		sll.insertFirst(11);
-		sll.insertFirst(1);
-		sll.insertFirst(2);
+		
+		//insert first
+//		sll.insertFirst(11);
+//		sll.insertFirst(1);
+//		sll.insertFirst(2);
+//		
+		
+		
+		//insert last
+		sll.insertLast(22);
 		sll.display();
 		
 		//System.out.println(" length is - " +sll.length());
