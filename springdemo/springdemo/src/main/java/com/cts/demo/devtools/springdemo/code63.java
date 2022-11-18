@@ -17,7 +17,7 @@ public class code63 {
 		}
 		else {
 			for(char ch='a';ch<='z';ch++) {
-				if(S.indexOf(ch)==0){
+				if(S.indexOf(ch)<0){
 					return false;
 				}
 			}
