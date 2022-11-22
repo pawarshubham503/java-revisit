@@ -2,7 +2,7 @@ package com.cts.demo.devtools.springdemo;
 
 public class code68 {
 //reverse string
-	
+
 	public static void main(String[] args) {
 		String str="rio";
 		System.out.println(reverse(str));

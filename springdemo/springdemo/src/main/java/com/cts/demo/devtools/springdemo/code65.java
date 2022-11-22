@@ -6,7 +6,7 @@ public class code65 {
 // code to check longest substring
 	
 	public static void main(String[] args) {
-		
+
 		String str="a,b,c,d,a,b";
 		System.out.println(Longest(str)); 
 	}
