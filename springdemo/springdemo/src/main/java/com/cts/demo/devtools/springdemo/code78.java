@@ -64,4 +64,4 @@ public class code78 {
         countDuplicateCharacters(str);
     }
 }
-}
+
