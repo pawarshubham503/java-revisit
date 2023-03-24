@@ -1,5 +1,9 @@
 package com.cts.demo.devtools.springdemo;
-
+// 1
+// 21
+// 321
+// 4321
+// 54321
 public class code142 {
     public static void main(String[] args) {
         int n=4;
