@@ -1,7 +1,7 @@
 package com.cts.demo.devtools.springdemo;
 
 import java.util.Scanner;
-
+//Write a program to print first x terms of the series 3N + 2 which are not multiples of 4.
 public class code149 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
