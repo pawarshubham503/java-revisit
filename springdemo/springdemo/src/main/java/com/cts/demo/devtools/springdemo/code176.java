@@ -1,13 +1,12 @@
 package com.cts.demo.devtools.springdemo;
 
-
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class code175 {
+public class code176 {
 
-    //remove null from array list
+   
+           //remove duplicates from array list
     public static void main(String[] args) {
         
         List<String> list=new  ArrayList<String>();
@@ -15,8 +14,9 @@ public class code175 {
         list.add("a");
         list.add("v");
         list.add("c");
-        list.add(null);
+        list.add("c");
 
-        list.stream().filter((x)-> x!=null).forEach(x-> System.out.println(x));
+        list.stream().distinct().forEach(x-> System.out.println(x));
     }
-}
+    }
+
